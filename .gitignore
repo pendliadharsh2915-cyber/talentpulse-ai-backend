@@ -1,0 +1,33 @@
+# Compiled class files & build artifacts
+target/
+*.class
+
+# Log files
+*.log
+logs/
+
+# Database files (H2 dev database persistence)
+data/
+*.mv.db
+*.trace.db
+
+# File uploads (Resume PDFs)
+uploads/
+*.pdf
+
+# Environment secrets & local config
+.env
+.env.local
+.env.*.local
+
+# IDE & Editor files
+.idea/
+*.iml
+.vscode/
+.settings/
+.classpath
+.project
+.DS_Store
+
+# Package manager files
+.mvn/wrapper/maven-wrapper.jar
