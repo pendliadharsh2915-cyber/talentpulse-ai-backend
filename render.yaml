@@ -5,7 +5,6 @@ services:
     dockerfilePath: Dockerfile
     plan: free
     region: oregon
-    healthCheckPath: /api/health
     envVars:
       - key: SPRING_PROFILES_ACTIVE
         value: prod
@@ -28,4 +27,3 @@ databases:
     user: talentpulse_user
     plan: free
     region: oregon
-

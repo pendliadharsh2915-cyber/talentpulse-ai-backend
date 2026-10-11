@@ -40,8 +40,8 @@ public class DatabaseConfig {
                 String userInfo = uri.getUserInfo();
                 if (userInfo != null && userInfo.contains(":")) {
                     String[] parts = userInfo.split(":", 2);
-                    username = parts[0];
-                    password = parts[1];
+                    username = java.net.URLDecoder.decode(parts[0], java.nio.charset.StandardCharsets.UTF_8);
+                    password = java.net.URLDecoder.decode(parts[1], java.nio.charset.StandardCharsets.UTF_8);
                 }
                 int port = uri.getPort() > 0 ? uri.getPort() : 5432;
                 url = "jdbc:postgresql://" + uri.getHost() + ":" + port + uri.getPath();
