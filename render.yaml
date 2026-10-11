@@ -25,6 +25,7 @@ services:
 databases:
   - name: talentpulse-db
     databaseName: jobportal
-    user: postgres
+    user: talentpulse_user
     plan: free
     region: oregon
+
